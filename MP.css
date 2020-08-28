@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+body{
+    background: #000;
+}
+
+#bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    filter: blur(40px); 
+}
+.container{
+    position:absolute;
+    height:400pt;
+    width:250pt;
+    margin: auto;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background:#000;
+    border-radius: 8px;
+    box-shadow:0 0 15px black;
+}
+#thumbnail{
+    position:absolute;
+    width: 130%;
+    transition:1s;
+}
+.song-name{
+    position: absolute;
+    height: 190pt;
+    width: 300pt;
+    background:-webkit-linear-gradient(45deg,rgb(72,0,139),rgb(0,199,149));
+    z-index:3;
+    top:-25%;
+    filter: blur(70px);
+}
+.box{
+    position: absolute;
+    height: 190pt;
+    width:400pt;
+    background:-webkit-linear-gradient(45deg,rgb(72,0,139),rgb(0,199,149));
+    bottom:-20%;
+    filter: blur(30px);
+}
+.song-title{
+    position:absolute;
+    z-index: 10;
+    color: white;
+    font-family: "Lobster", cursive;
+    font-size: 30px;
+    top:10%;
+    text-align:center;
+}
+#pp{
+    position: absolute;
+    background: transparent;
+    height: 50px;
+    width:50px;
+    filter:invert(1);
+    cursor:pointer;
+    bottom:12%;
+    
+}
+
+
+#next,
+#prev{
+    background: transparent;
+    position: absolute;
+    height:30px;
+    width:30px;
+    filter: invert(1);
+    cursor: pointer;
+    bottom:14%;
+    z-index: 11;
+
+}
+ #next{
+     right: 15%;
+ }
+ #prev
+ {
+     left:15%;
+     transform: rotate(180deg);
+ }
+ #progressBar{
+      -webkit-appearance: none;
+      appearance:none;
+      position: absolute;
+      z-index: 2;
+      height: 3px;
+      background: #000;
+        
+      width:160pt;
+      border-radius: 10px;
+      bottom:7%;
+ }
+#progressBar::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance:none;
+    height: 3px;
+    width : 3px;
+    border: 0;
+    border-radius: 50px;
+    background: transparent;
+ }
+ #progressBar::-moz-range-progress{
+   height: 4px;
+   background: -webkit-linear-gradient(
+       0deg,
+       rgb(81,255,159),
+       rgb(96,106,255)
+       );
+       border-radius: 10px;
+ }
